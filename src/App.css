@@ -1,7 +1,40 @@
-.App {
-  text-align: center;
+main {
+  background-color: whitesmoke;
 }
 
+h1 {
+  text-align: center;
+  margin: auto;
+  padding: 50px;
+  flex-basis: auto;
+  /* position: fixed; */
+  /* top: 100; */
+}
+
+h2 {
+  text-align: center;
+  margin: auto;
+  /* padding: 50px; */
+  flex-basis: auto;
+  /* position: fixed; */
+  /* top: 100; */
+}
+
+.old-standard-tt-regular-italic {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
+}
+
+.old-standard-tt-regular-italic-small {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: italic;
+  /* font-size: 100px; */
+}
+
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +68,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
