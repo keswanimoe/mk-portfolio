@@ -2,6 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 
 export default function Navbar() {
     return (
+    <div id="navbar">
     <Nav
     variant="underline"
     className="justify-content-center" 
@@ -21,5 +22,6 @@ export default function Navbar() {
             <Nav.Link href="#contact" style={{ color: 'black' }}>Contact</Nav.Link>
         </Nav.Item>
     </Nav>
+    </div>
   );
 }
