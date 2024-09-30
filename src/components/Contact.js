@@ -5,7 +5,7 @@ import Email from './images/Email_icon.png';
 export default function Contact() {
     return(
         <><div>
-            <p>keswanimoe@hotmail.co.uk</p>
+            <p style={{textAlign: 'center'}}>keswanimoe@hotmail.co.uk</p>
         </div>
         <div id="icons">
             <a href="https://github.com/keswanimoe">
