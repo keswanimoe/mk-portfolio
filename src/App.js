@@ -5,36 +5,33 @@ import Contact from "./components/Contact.js"
 import Navbar from "./components/Navbar.js"
 import Projects from "./components/Projects.js"
 import Skills from "./components/Skills.js"
-
+import Name from "./components/Name.js"
 
 function App() {
   return (
     <main>
       <Navbar/>
-      <div style={{ padding: '170px 0'}}>
-        <h1 className="old-standard-tt-regular-italic">Moesha Keswani</h1>
-        <h2 className="old-standard-tt-regular-italic-small">hire me!</h2>
-      </div>
-      
-      <About/>
 
-      <div id="projects" style={{ padding: '20px 0'}}>
-        <h2 className="old-standard-tt-regular-italic-small">Projects</h2>
+      <Name/>
+      
+      <div style={{ padding: '180px 0 400px 0'}}>
+        <About/>
       </div>
-      <Projects/>
+
+      <div id="projects" style={{ padding: '60px 0 20px 0'}}>
+        <h2>Projects</h2>
+      </div>
       <Projects/>
 
       <div id="skills">
-        <h2 style={{ padding: '40px 0px 40px 0'}} className="old-standard-tt-regular-italic-small">Skills</h2>
+        <h2 style={{ padding: '60px 0px 40px 0'}}>Skills & Technologies</h2>
         <Skills/>
       </div>
 
-      <div id="contact" style={{ padding: '60px 0 0 0'}}>
-        <h2 className="old-standard-tt-regular-italic-small">Contact Me</h2>
+      <div id="contact">
+        <h2>Contact Me</h2>
       </div>
       <Contact/>
-
-      {/* <div style={{ padding: '100px 0'}}></div> */}
     </main>
   );
 }
