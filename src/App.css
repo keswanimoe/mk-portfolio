@@ -3,6 +3,7 @@ main {
   background-color: whitesmoke;
   color: black;
   overflow-x: hidden;
+  /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 
 .name-svg {
