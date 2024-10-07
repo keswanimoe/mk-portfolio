@@ -6,7 +6,7 @@ export default function About() {
             <h2 style={{ padding: '40px'}}>About Me</h2>
                 <p>Hey! My name’s Moesha (in case that wasn't already obvious)</p>
                 <p>
-                I'm an aspiring Software Engineer based in London, UK. I built this website because I didn’t have one and wanted a space that was more than just a CV but an extension of my personality!
+                I'm an aspiring Software Engineer based in London, UK. I built this website because I didn’t have one and wanted a space that was more than just a <a href="https://drive.google.com/file/d/1D0P-1I48CHbkup-S6zeEPT4goQQHpdIZ/view?usp=sharing">CV</a> but an extension of my personality!
                 </p>
                 <p>
                 Growing up, I was fascinated by technology, largely because I wanted to do what my older siblings were doing which was messing around with the family PC. The excitement of using a computer was undeniable, and every chance I got, I would dive into learning how to use it. Eventually, my family gifted me my own laptop, which only fuelled my passions. Since then, it’s safe to say I've become the go-to tech support for friends and family.

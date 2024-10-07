@@ -6,7 +6,6 @@ export default function Navbar() {
     <Nav
     variant="underline"
     className="justify-content-center" 
-    activeKey="#about"
     //   onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
     >
         <Nav.Item>
