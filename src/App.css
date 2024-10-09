@@ -1,14 +1,45 @@
 main {
   /* background-color: #afc6e9; */
-  background-color: whitesmoke;
-  color: black;
+  background-color: rgb(214, 230, 248); /*blue*/
+  /* background-color: rgb(250, 162, 121); */
+  color: rgb(40, 30, 33);
   overflow-x: hidden;
   /* font-family: "Lucida Console", "Courier New", monospace; */
-  font-family: "Gill Sans", sans-serif;
+  /* font-family: "DM Sans", sans-serif; */
+  /* font-optical-sizing: auto; */
+  font-weight: 250;
+  font-style: normal;
 }
 
-.name-svg {
+#navbar {
+  z-index: 1;
+  overflow: hidden;
+  background-color: rgb(196, 220, 247);
+  /* background-color: rgb(255, 123, 123); */
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.svg {
   display: flex;
+  padding: 20px;
+}
+
+.svg-name {
+  animation: fadeIn 5s;
+} 
+
+.stars {
+  /* fill: black; */
+  /* stroke: black; */
+  margin: auto;
+  display: flex;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 h1 {
@@ -16,17 +47,12 @@ h1 {
   margin: auto;
   padding: 50px;
   flex-basis: auto;
-  /* position: fixed; */
-  /* top: 100; */
 }
 
 h2 {
   text-align: center;
   margin: auto;
-  /* padding: 50px; */
   flex-basis: auto;
-  /* position: fixed; */
-  /* top: 100; */
 }
 
 div {
@@ -56,13 +82,6 @@ img {
 
 p {
   font-size: 20px;
-  /* text-align: left; */
-  /* color: white; */
-  /* background-color: black;
-  opacity: 0.5;
-  display:inline-block;
-  border-radius: 5px;
-  padding:0px 10px */
 }
 
 a:link {
@@ -77,30 +96,74 @@ a:link {
   gap: 10px;
 }
 
-#navbar {
-  z-index: 1;
-  overflow: hidden;
-  background-color: whitesmoke;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+/* stars styling */
+g {
+  fill: black;
 }
 
-g {
-  fill: red;
+/* animation: move2 3s alternate-reverse infinite; */
+
+.star1 {
+  animation: move2 3s alternate-reverse infinite;
+}
+
+.star2 {
+  animation: move3 3s alternate-reverse infinite;
+}
+
+#right-star {
+  fill: rgb(249, 224, 133);
+  stroke: rgb(248, 208, 13);
+  /* stroke: rgb(249, 224, 133); */
+  stroke-width: 10px;
+  stroke-dasharray: var(--rs-length);
+  stroke-dashoffset: var(--rs-length);
+  animation: move 5s linear infinite; 
+}
+
+#left-star {
+  fill: rgb(249, 224, 133);
+  stroke: rgb(248, 208, 13);
+  stroke-width: 10px;
+  stroke-dasharray: var(--ls-length);
+  stroke-dashoffset: var(--ls-length);
+  animation: move 5s linear infinite; 
+}
+
+#left-face {
+  stroke: 0.1;
+}
+
+@keyframes move {
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    /* transform: rotate(5deg); */
+    /* transform: rotate(-5deg); */
+    transform: rotate(-45deg);
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes move3 {
+  0% {
+    transform: rotate(5deg);
+    transform: rotate(-5deg);
+  }
 }
 
 .term-icon {
   float: left;
-  /* display: flexbox; */
-  /* margin: 0 0 0 10%; */
 }
 
 .wealthwizard {
   text-align: left;
   padding: 30px 0px 0px 0px;
   margin: 0;
-  /* background-color: color-mix(in srgb, yellow 20%, black ); */
 }
 
 span.winner {

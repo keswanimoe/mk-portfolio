@@ -5,19 +5,18 @@ import Contact from "./components/Contact.js"
 import Navbar from "./components/Navbar.js"
 import Projects from "./components/Projects.js"
 import Skills from "./components/Skills.js"
-import Name from "./components/Name.js"
+import ScrollToTopButton from './components/scrollTop.js';
+import Stars2 from './components/Stars2.js';
 
 function App() {
   return (
     <main>
       <Navbar/>
-
-      <Name/>
-      
-      <div style={{ padding: '180px 0 20px 0'}}>
+      <Stars2/>
+      <ScrollToTopButton/>
+      <div style={{ padding: '100px 0 20px 0'}}>
         <About/>
       </div>
-
       <div id="projects" style={{ padding: '60px 0 20px 0'}}>
         <h2>Projects</h2>
       </div>

@@ -21,7 +21,7 @@ export default function About() {
                 I believe the tech industry is where creativity and technical expertise can truly coexist, and I am sooo excited to work alongside like-minded individuals who are just as passionate about integrating creativity into technology to create efficient solutions as I am!
                 </p>
 
-            <h3 style={{ padding: '10px', textAlign: 'center'}}>Hobbies</h3>   
+            <h3 style={{ padding: '10px', textAlign: 'center'}}>A few hobbies of mine</h3>   
             <h4 style={{ padding: '0 0 10px 0', textAlign: 'left'}}>Sewing</h4>   
             <p>
             As I became more aware of the environmental impact of fast fashion, it became clear that I could no longer ignore the issues. Fashion has always been a love of mine, but I hadn’t found the time to learn sewing until the pandemic gave me that opportunity. I now commit to exclusively buying second-hand clothes and fabrics, which I sometimes upcycle. I set myself a challenge to adopt a more sustainable lifestyle by reducing my consumption (stopping the purchase of new clothes), reusing (buying second-hand), and recycling (upcycling what I already own). Since learning, I have made so many garments and now consider myself a pretty great seamstress! You can see some of my sewing creations on <a href="https://www.instagram.com/moeshasewing/">Instagram</a> or <a href="https://www.tiktok.com/@moeshasewing?lang=en">TikTok</a>!

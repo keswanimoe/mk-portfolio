@@ -11,7 +11,7 @@ import TermIcon from './images/terminal-icon.png';
 
 export default function Projects() {
     return (
-        <section style={{ margin: "0 40px 0 40px"}}>
+        <section style={{ margin: "0 30px 0 30px"}}>
             <i>For a full list of my work including scientific algorithms, coding exercises and practise projects, check out my <a href="https://github.com/keswanimoe">GitHub</a></i>
             <a href="https://github.com/keswanimoe/makers_invaders">
                 <h3 style={{ margin: "20px 0 0 0"}} >Makers Invaders</h3>
