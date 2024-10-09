@@ -2,7 +2,8 @@ main {
   /* background-color: #afc6e9; */
   background-color: rgb(214, 230, 248); /*blue*/
   /* background-color: rgb(250, 162, 121); */
-  color: rgb(40, 30, 33);
+  /* color: rgb(40, 30, 33); */
+  color: black;
   overflow-x: hidden;
   /* font-family: "Lucida Console", "Courier New", monospace; */
   /* font-family: "DM Sans", sans-serif; */
@@ -102,23 +103,18 @@ g {
 }
 
 /* animation: move2 3s alternate-reverse infinite; */
+.star1, .star2 {
+  transform-origin: 50% 50%; /* Set the pivot point to the center of the stars */
+}
 
 .star1 {
-  animation: move2 3s alternate-reverse infinite;
+  animation: swing1 5s infinite alternate;
+  translate: 0px 30px 0;
 }
 
 .star2 {
-  animation: move3 3s alternate-reverse infinite;
-}
-
-#right-star {
-  fill: rgb(249, 224, 133);
-  stroke: rgb(248, 208, 13);
-  /* stroke: rgb(249, 224, 133); */
-  stroke-width: 10px;
-  stroke-dasharray: var(--rs-length);
-  stroke-dashoffset: var(--rs-length);
-  animation: move 5s linear infinite; 
+  animation: swing2 5s infinite alternate;
+  translate: 20px 30px 0;
 }
 
 #left-star {
@@ -127,32 +123,49 @@ g {
   stroke-width: 10px;
   stroke-dasharray: var(--ls-length);
   stroke-dashoffset: var(--ls-length);
-  animation: move 5s linear infinite; 
+  animation: strokeAnimation 5s linear infinite; 
+}
+
+#right-star {
+  fill: rgb(249, 224, 133);
+  stroke: rgb(248, 208, 13);
+  stroke-width: 10px;
+  stroke-dasharray: var(--rs-length);
+  stroke-dashoffset: var(--rs-length);
+  animation: strokeAnimation 5s linear infinite; 
 }
 
 #left-face {
   stroke: 0.1;
 }
 
-@keyframes move {
+@keyframes strokeAnimation {
   100% {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 }
 
-@keyframes move2 {
+@keyframes swing1 {
   0% {
-    /* transform: rotate(5deg); */
-    /* transform: rotate(-5deg); */
-    transform: rotate(-45deg);
-    transform: rotate(5deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg); /* Slight rotation to the right */
+  }
+  100% {
+    transform: rotate(2deg); /* Back to original position */
   }
 }
 
-@keyframes move3 {
+@keyframes swing2 {
   0% {
-    transform: rotate(5deg);
-    transform: rotate(-5deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg); /* Slight rotation to the left */
+  }
+  100% {
+    transform: rotate(2deg); /* Back to original position */
   }
 }
 
