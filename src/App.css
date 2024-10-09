@@ -175,11 +175,10 @@ g {
 
 .wealthwizard {
   text-align: left;
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0px 10px 0px;
   margin: 0;
 }
 
 span.winner {
-  color: rgb(239, 209, 38);
-  text-decoration:  underline;
+  color: rgb(229, 200, 36);
 }

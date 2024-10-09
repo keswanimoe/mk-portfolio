@@ -28,6 +28,7 @@ export default function Projects() {
                         <img src={Inavders2} alt="Gameplay screenshots showing different enemies" />
                     </Carousel.Item>
                 </Carousel>
+                <i>Click on the title to see the codebase</i>
             </div>
             <a href='https://github.com/keswanimoe/NeuroGames'>
                 <h3>NeuroGames</h3></a>
@@ -53,14 +54,15 @@ export default function Projects() {
                         <img src={Neuro5} alt="Gameplay screenshots showing different enemies" />
                     </Carousel.Item>
                 </Carousel>
+                <i>Click on the title to see the codebase</i>
             </div>
             
             <div style={{margin:"20px 0 70px 0"}}> 
-            <img className="term-icon" src={TermIcon} alt="Terminal App" style={{width: "15rem"}}/>
-            <a style={{textDecoration: "none", color: "black", padding:"20px"}} href="https://github.com/fechachris4/downloading-money">
-                <h2 className="wealthwizard"><span className="winner">Empower Pennies Hackathon Winner:</span> Wealth Wizard</h2>
+            <a style={{textDecoration: "none", color: "black"}} href="https://github.com/fechachris4/downloading-money">
+                <h3 className="wealthwizard"><span className="winner">Empower Pennies Hackathon Winner:</span> Wealth Wizard</h3>
             </a>
-            <p style={{margin:"0 0 0 240px"}}>A terminal app which prompts a user to enter the file path to their monthly bank statement jpg or pdf file and using OCR technology and generative AI, extracts text from the file to output a categorised spending overview with financial advice based on spending</p>
+            <p>A terminal app which prompts a user to enter the file path to their monthly bank statement jpg or pdf file and using OCR technology and generative AI, extracts text from the file to output a categorised spending overview with financial advice based on spending</p>
+            <i>Click on the title to see the codebase</i>
             </div>
         </section>
     );
