@@ -6,7 +6,6 @@ import Neuro2 from './images/ng2.png';
 import Neuro3 from './images/ng3.png';
 import Neuro4 from './images/ng4.png';
 import Neuro5 from './images/ng-diagram.png';
-import TermIcon from './images/terminal-icon.png';
 // import { Row, Col } from 'react-bootstrap';
 
 export default function Projects() {
